@@ -1,0 +1,14 @@
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\bin\Debug\surat html.exe
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\bin\Debug\surat html.pdb
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\obj\x86\Debug\surat_html.Form1.resources
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\obj\x86\Debug\surat_html.Properties.Resources.resources
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\obj\x86\Debug\surat html.csproj.GenerateResource.Cache
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\obj\x86\Debug\surat html.exe
+C:\Users\herdi\AppData\Local\Temporary Projects\surat html\obj\x86\Debug\surat html.pdb
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\obj\x86\Debug\surat html.exe
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\obj\x86\Debug\surat html.pdb
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\bin\Debug\surat html.exe
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\bin\Debug\surat html.pdb
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\obj\x86\Debug\surat_html.Form1.resources
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\obj\x86\Debug\surat_html.Properties.Resources.resources
+C:\Users\herdi\documents\visual studio 2010\Projects\surat html\surat html\obj\x86\Debug\surat html.csproj.GenerateResource.Cache
