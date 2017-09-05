@@ -39,7 +39,7 @@ namespace surat_html
             string namaBPKB = textBoxNamaBPKB.Text;
             string noBPKB = textBoxNoBPKB.Text;
             string alamatBPKB = textBoxAlamatBPKB.Text;
-            string tanggal = textBoxTanggal.Text;
+            string tanggal = dateTimePicker1.Value.AddDays(1).ToString("dddd, dd MMMM yyyy");
             string namaLeasing = textBoxNamaLeasing.Text;
             string saksi1 = textBoxSaksi1.Text;
             string saksi2 = textBoxSaksi2.Text;
@@ -47,10 +47,10 @@ namespace surat_html
             string readText = File.ReadAllText(path);
 
             webBrowser1.DocumentText = readText.Replace("{{nama}}", nama)
-                .Replace("{{alamat}}", tempat)
+                .Replace("{{alamat}}", alamat)
                 .Replace("{{noKTP}}", noKTP)
                 .Replace("{{telepon}}", telepon)
-                .Replace("{{merKendaraan}}", merkKendaraan)
+                .Replace("{{merkKendaraan}}", merkKendaraan)
                 .Replace("{{typeKendaraan}}", typeKendaraan)
                 .Replace("{{noPolisi}}", noPolisi)
                 .Replace("{{thnBuat}}", thnBuat)

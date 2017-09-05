@@ -61,13 +61,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxSaksi2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBoxSaksi1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBoxTanggal = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxNamaLeasing = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             this.button1.Location = new System.Drawing.Point(412, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 18;
             this.button1.Text = "Print";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -122,10 +122,10 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(319, 430);
+            this.webBrowser1.Location = new System.Drawing.Point(12, 430);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(288, 250);
+            this.webBrowser1.Size = new System.Drawing.Size(772, 323);
             this.webBrowser1.TabIndex = 5;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
@@ -135,7 +135,7 @@
             this.comboBox1.Location = new System.Drawing.Point(126, 74);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBox1.TabIndex = 15;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox1
@@ -365,10 +365,11 @@
             this.textBoxSaksi2.Location = new System.Drawing.Point(538, 48);
             this.textBoxSaksi2.Name = "textBoxSaksi2";
             this.textBoxSaksi2.Size = new System.Drawing.Size(203, 20);
-            this.textBoxSaksi2.TabIndex = 3;
+            this.textBoxSaksi2.TabIndex = 17;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.dateTimePicker1);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.label18);
@@ -378,7 +379,6 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBoxTanggal);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.textBoxNamaLeasing);
             this.groupBox3.Controls.Add(this.label17);
@@ -389,12 +389,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Info Lain";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(126, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePicker1.TabIndex = 13;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(619, 72);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
+            this.button3.TabIndex = 20;
             this.button3.Text = "Load";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -403,7 +410,7 @@
             this.button2.Location = new System.Drawing.Point(538, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
+            this.button2.TabIndex = 19;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -430,7 +437,7 @@
             this.textBoxSaksi1.Location = new System.Drawing.Point(538, 22);
             this.textBoxSaksi1.Name = "textBoxSaksi1";
             this.textBoxSaksi1.Size = new System.Drawing.Size(203, 20);
-            this.textBoxSaksi1.TabIndex = 2;
+            this.textBoxSaksi1.TabIndex = 16;
             // 
             // label15
             // 
@@ -440,13 +447,6 @@
             this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 6;
             this.label15.Text = "Dokumen";
-            // 
-            // textBoxTanggal
-            // 
-            this.textBoxTanggal.Location = new System.Drawing.Point(126, 22);
-            this.textBoxTanggal.Name = "textBoxTanggal";
-            this.textBoxTanggal.Size = new System.Drawing.Size(203, 20);
-            this.textBoxTanggal.TabIndex = 0;
             // 
             // label16
             // 
@@ -462,7 +462,7 @@
             this.textBoxNamaLeasing.Location = new System.Drawing.Point(126, 48);
             this.textBoxNamaLeasing.Name = "textBoxNamaLeasing";
             this.textBoxNamaLeasing.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNamaLeasing.TabIndex = 1;
+            this.textBoxNamaLeasing.TabIndex = 14;
             // 
             // label17
             // 
@@ -477,7 +477,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 579);
+            this.ClientSize = new System.Drawing.Size(850, 765);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -536,10 +536,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBoxSaksi1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBoxTanggal;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBoxNamaLeasing;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
