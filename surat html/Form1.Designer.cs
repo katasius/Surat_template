@@ -71,17 +71,45 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxNamaLeasing = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBoxJenisAsuransi = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBoxDanaPembatalan = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBoxDanaTitipan = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBoxTenorKredit = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBoxDanaAngsuran = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBoxDanaCair = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxTenorAsuransi = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBoxNoKTPSaksi1 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBoxNoKTPSaksi2 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBoxPersetujuanNoKTP = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBoxPersetujuanNama = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBoxPersetujuanAlamat = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(412, 72);
+            this.button1.Location = new System.Drawing.Point(412, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 27;
             this.button1.Text = "Print";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -122,20 +150,20 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(12, 430);
+            this.webBrowser1.Location = new System.Drawing.Point(805, 17);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(772, 323);
+            this.webBrowser1.Size = new System.Drawing.Size(293, 323);
             this.webBrowser1.TabIndex = 5;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 74);
+            this.comboBox1.Location = new System.Drawing.Point(518, 72);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
+            this.comboBox1.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1.TabIndex = 26;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox1
@@ -150,8 +178,8 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 271);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.Size = new System.Drawing.Size(360, 172);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Pribadi";
             // 
@@ -210,8 +238,8 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Location = new System.Drawing.Point(396, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(388, 271);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.Size = new System.Drawing.Size(388, 326);
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data Kendaraan";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -219,8 +247,9 @@
             // textBoxAlamatBPKB
             // 
             this.textBoxAlamatBPKB.Location = new System.Drawing.Point(154, 230);
+            this.textBoxAlamatBPKB.Multiline = true;
             this.textBoxAlamatBPKB.Name = "textBoxAlamatBPKB";
-            this.textBoxAlamatBPKB.Size = new System.Drawing.Size(203, 20);
+            this.textBoxAlamatBPKB.Size = new System.Drawing.Size(203, 79);
             this.textBoxAlamatBPKB.TabIndex = 12;
             // 
             // label13
@@ -362,62 +391,67 @@
             // 
             // textBoxSaksi2
             // 
-            this.textBoxSaksi2.Location = new System.Drawing.Point(538, 48);
+            this.textBoxSaksi2.Location = new System.Drawing.Point(146, 73);
             this.textBoxSaksi2.Name = "textBoxSaksi2";
             this.textBoxSaksi2.Size = new System.Drawing.Size(203, 20);
-            this.textBoxSaksi2.TabIndex = 17;
+            this.textBoxSaksi2.TabIndex = 22;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.textBoxNoKTPSaksi2);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.textBoxNoKTPSaksi1);
             this.groupBox3.Controls.Add(this.dateTimePicker1);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.textBoxNamaLeasing);
             this.groupBox3.Controls.Add(this.textBoxSaksi2);
+            this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.textBoxSaksi1);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBoxNamaLeasing);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Location = new System.Drawing.Point(12, 298);
+            this.groupBox3.Location = new System.Drawing.Point(12, 494);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(772, 126);
-            this.groupBox3.TabIndex = 9;
+            this.groupBox3.Size = new System.Drawing.Size(772, 176);
+            this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Info Lain";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 19);
+            this.dateTimePicker1.Location = new System.Drawing.Point(518, 17);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(203, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.TabIndex = 24;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(619, 72);
+            this.button3.Location = new System.Drawing.Point(619, 131);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 20;
+            this.button3.TabIndex = 29;
             this.button3.Text = "Load";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(538, 72);
+            this.button2.Location = new System.Drawing.Point(538, 131);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
+            this.button2.TabIndex = 28;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(409, 25);
+            this.label18.Location = new System.Drawing.Point(17, 23);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(42, 13);
             this.label18.TabIndex = 9;
@@ -426,7 +460,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(409, 51);
+            this.label14.Location = new System.Drawing.Point(17, 76);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(42, 13);
             this.label14.TabIndex = 8;
@@ -434,15 +468,15 @@
             // 
             // textBoxSaksi1
             // 
-            this.textBoxSaksi1.Location = new System.Drawing.Point(538, 22);
+            this.textBoxSaksi1.Location = new System.Drawing.Point(146, 20);
             this.textBoxSaksi1.Name = "textBoxSaksi1";
             this.textBoxSaksi1.Size = new System.Drawing.Size(203, 20);
-            this.textBoxSaksi1.TabIndex = 16;
+            this.textBoxSaksi1.TabIndex = 20;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(17, 78);
+            this.label15.Location = new System.Drawing.Point(409, 76);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 6;
@@ -451,7 +485,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(17, 25);
+            this.label16.Location = new System.Drawing.Point(409, 23);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(46, 13);
             this.label16.TabIndex = 3;
@@ -459,31 +493,264 @@
             // 
             // textBoxNamaLeasing
             // 
-            this.textBoxNamaLeasing.Location = new System.Drawing.Point(126, 48);
+            this.textBoxNamaLeasing.Location = new System.Drawing.Point(518, 46);
             this.textBoxNamaLeasing.Name = "textBoxNamaLeasing";
             this.textBoxNamaLeasing.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNamaLeasing.TabIndex = 14;
+            this.textBoxNamaLeasing.TabIndex = 25;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(17, 51);
+            this.label17.Location = new System.Drawing.Point(409, 49);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(75, 13);
             this.label17.TabIndex = 4;
             this.label17.Text = "Nama Leasing";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.textBoxTenorAsuransi);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.textBoxJenisAsuransi);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.textBoxDanaPembatalan);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.textBoxDanaTitipan);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.textBoxTenorKredit);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.textBoxDanaAngsuran);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Controls.Add(this.textBoxDanaCair);
+            this.groupBox4.Location = new System.Drawing.Point(12, 344);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(772, 144);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Grup Dana";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(410, 74);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(74, 13);
+            this.label22.TabIndex = 29;
+            this.label22.Text = "Jenis Asuransi";
+            // 
+            // textBoxJenisAsuransi
+            // 
+            this.textBoxJenisAsuransi.Location = new System.Drawing.Point(519, 71);
+            this.textBoxJenisAsuransi.Name = "textBoxJenisAsuransi";
+            this.textBoxJenisAsuransi.Size = new System.Drawing.Size(203, 20);
+            this.textBoxJenisAsuransi.TabIndex = 18;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(410, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(92, 13);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "Dana Pembatalan";
+            // 
+            // textBoxDanaPembatalan
+            // 
+            this.textBoxDanaPembatalan.Location = new System.Drawing.Point(519, 45);
+            this.textBoxDanaPembatalan.Name = "textBoxDanaPembatalan";
+            this.textBoxDanaPembatalan.Size = new System.Drawing.Size(203, 20);
+            this.textBoxDanaPembatalan.TabIndex = 17;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(410, 22);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(68, 13);
+            this.label24.TabIndex = 24;
+            this.label24.Text = "Dana Titipan";
+            // 
+            // textBoxDanaTitipan
+            // 
+            this.textBoxDanaTitipan.Location = new System.Drawing.Point(519, 19);
+            this.textBoxDanaTitipan.Name = "textBoxDanaTitipan";
+            this.textBoxDanaTitipan.Size = new System.Drawing.Size(203, 20);
+            this.textBoxDanaTitipan.TabIndex = 16;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(17, 78);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(65, 13);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Tenor Kredit";
+            // 
+            // textBoxTenorKredit
+            // 
+            this.textBoxTenorKredit.Location = new System.Drawing.Point(126, 75);
+            this.textBoxTenorKredit.Name = "textBoxTenorKredit";
+            this.textBoxTenorKredit.Size = new System.Drawing.Size(203, 20);
+            this.textBoxTenorKredit.TabIndex = 15;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(17, 52);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(81, 13);
+            this.label20.TabIndex = 21;
+            this.label20.Text = "Dana Angsuran";
+            // 
+            // textBoxDanaAngsuran
+            // 
+            this.textBoxDanaAngsuran.Location = new System.Drawing.Point(126, 49);
+            this.textBoxDanaAngsuran.Name = "textBoxDanaAngsuran";
+            this.textBoxDanaAngsuran.Size = new System.Drawing.Size(203, 20);
+            this.textBoxDanaAngsuran.TabIndex = 14;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(17, 26);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 13);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "Dana Cair";
+            // 
+            // textBoxDanaCair
+            // 
+            this.textBoxDanaCair.Location = new System.Drawing.Point(126, 23);
+            this.textBoxDanaCair.Name = "textBoxDanaCair";
+            this.textBoxDanaCair.Size = new System.Drawing.Size(203, 20);
+            this.textBoxDanaCair.TabIndex = 13;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(410, 101);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 13);
+            this.label25.TabIndex = 31;
+            this.label25.Text = "Tenor Asuransi";
+            // 
+            // textBoxTenorAsuransi
+            // 
+            this.textBoxTenorAsuransi.Location = new System.Drawing.Point(519, 98);
+            this.textBoxTenorAsuransi.Name = "textBoxTenorAsuransi";
+            this.textBoxTenorAsuransi.Size = new System.Drawing.Size(203, 20);
+            this.textBoxTenorAsuransi.TabIndex = 19;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(17, 50);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(83, 13);
+            this.label26.TabIndex = 21;
+            this.label26.Text = "No KTP Saksi 1";
+            // 
+            // textBoxNoKTPSaksi1
+            // 
+            this.textBoxNoKTPSaksi1.Location = new System.Drawing.Point(146, 47);
+            this.textBoxNoKTPSaksi1.Name = "textBoxNoKTPSaksi1";
+            this.textBoxNoKTPSaksi1.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNoKTPSaksi1.TabIndex = 21;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 102);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 13);
+            this.label27.TabIndex = 23;
+            this.label27.Text = "No KTP Saksi 2";
+            // 
+            // textBoxNoKTPSaksi2
+            // 
+            this.textBoxNoKTPSaksi2.Location = new System.Drawing.Point(146, 99);
+            this.textBoxNoKTPSaksi2.Name = "textBoxNoKTPSaksi2";
+            this.textBoxNoKTPSaksi2.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNoKTPSaksi2.TabIndex = 23;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBoxPersetujuanNoKTP);
+            this.groupBox5.Controls.Add(this.textBoxPersetujuanAlamat);
+            this.groupBox5.Controls.Add(this.label28);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.textBoxPersetujuanNama);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Location = new System.Drawing.Point(22, 199);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(350, 139);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Grup Persetujuan";
+            // 
+            // textBoxPersetujuanNoKTP
+            // 
+            this.textBoxPersetujuanNoKTP.Location = new System.Drawing.Point(116, 104);
+            this.textBoxPersetujuanNoKTP.Name = "textBoxPersetujuanNoKTP";
+            this.textBoxPersetujuanNoKTP.Size = new System.Drawing.Size(203, 20);
+            this.textBoxPersetujuanNoKTP.TabIndex = 11;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(7, 107);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(45, 13);
+            this.label28.TabIndex = 14;
+            this.label28.Text = "No KTP";
+            // 
+            // textBoxPersetujuanNama
+            // 
+            this.textBoxPersetujuanNama.Location = new System.Drawing.Point(116, 17);
+            this.textBoxPersetujuanNama.Name = "textBoxPersetujuanNama";
+            this.textBoxPersetujuanNama.Size = new System.Drawing.Size(203, 20);
+            this.textBoxPersetujuanNama.TabIndex = 9;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 20);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(35, 13);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Nama";
+            // 
+            // textBoxPersetujuanAlamat
+            // 
+            this.textBoxPersetujuanAlamat.Location = new System.Drawing.Point(116, 43);
+            this.textBoxPersetujuanAlamat.Multiline = true;
+            this.textBoxPersetujuanAlamat.Name = "textBoxPersetujuanAlamat";
+            this.textBoxPersetujuanAlamat.Size = new System.Drawing.Size(203, 56);
+            this.textBoxPersetujuanAlamat.TabIndex = 10;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(7, 46);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(39, 13);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "Alamat";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 765);
+            this.ClientSize = new System.Drawing.Size(1163, 765);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Dwindo";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -491,6 +758,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -540,6 +811,32 @@
         private System.Windows.Forms.TextBox textBoxNamaLeasing;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBoxJenisAsuransi;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBoxDanaPembatalan;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBoxDanaTitipan;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBoxTenorKredit;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBoxDanaAngsuran;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBoxDanaCair;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBoxTenorAsuransi;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox textBoxNoKTPSaksi2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBoxNoKTPSaksi1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox textBoxPersetujuanNoKTP;
+        private System.Windows.Forms.TextBox textBoxPersetujuanAlamat;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBoxPersetujuanNama;
+        private System.Windows.Forms.Label label29;
     }
 }
 
