@@ -61,17 +61,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxSaksi2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBoxNoKTPSaksi2 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBoxNoKTPSaksi1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.textBoxNamaLeasing = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBoxSaksi1 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBoxNamaLeasing = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxTenorAsuransi = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.textBoxJenisAsuransi = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -84,19 +90,13 @@
             this.textBoxDanaAngsuran = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.textBoxDanaCair = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBoxTenorAsuransi = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBoxNoKTPSaksi1 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBoxNoKTPSaksi2 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBoxPersetujuanNoKTP = new System.Windows.Forms.TextBox();
+            this.textBoxPersetujuanAlamat = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.textBoxPersetujuanNama = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBoxPersetujuanAlamat = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -422,6 +422,38 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Info Lain";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 102);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 13);
+            this.label27.TabIndex = 23;
+            this.label27.Text = "No KTP Saksi 2";
+            // 
+            // textBoxNoKTPSaksi2
+            // 
+            this.textBoxNoKTPSaksi2.Location = new System.Drawing.Point(146, 99);
+            this.textBoxNoKTPSaksi2.Name = "textBoxNoKTPSaksi2";
+            this.textBoxNoKTPSaksi2.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNoKTPSaksi2.TabIndex = 23;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(17, 50);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(83, 13);
+            this.label26.TabIndex = 21;
+            this.label26.Text = "No KTP Saksi 1";
+            // 
+            // textBoxNoKTPSaksi1
+            // 
+            this.textBoxNoKTPSaksi1.Location = new System.Drawing.Point(146, 47);
+            this.textBoxNoKTPSaksi1.Name = "textBoxNoKTPSaksi1";
+            this.textBoxNoKTPSaksi1.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNoKTPSaksi1.TabIndex = 21;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(518, 17);
@@ -437,6 +469,7 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "Load";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -448,6 +481,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(409, 23);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 13);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Tanggal";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(409, 49);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Nama Leasing";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -456,6 +507,22 @@
             this.label18.Size = new System.Drawing.Size(42, 13);
             this.label18.TabIndex = 9;
             this.label18.Text = "Saksi 1";
+            // 
+            // textBoxNamaLeasing
+            // 
+            this.textBoxNamaLeasing.Location = new System.Drawing.Point(518, 46);
+            this.textBoxNamaLeasing.Name = "textBoxNamaLeasing";
+            this.textBoxNamaLeasing.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNamaLeasing.TabIndex = 25;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(409, 76);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 13);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Dokumen";
             // 
             // label14
             // 
@@ -472,40 +539,6 @@
             this.textBoxSaksi1.Name = "textBoxSaksi1";
             this.textBoxSaksi1.Size = new System.Drawing.Size(203, 20);
             this.textBoxSaksi1.TabIndex = 20;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(409, 76);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 13);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Dokumen";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(409, 23);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 13);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Tanggal";
-            // 
-            // textBoxNamaLeasing
-            // 
-            this.textBoxNamaLeasing.Location = new System.Drawing.Point(518, 46);
-            this.textBoxNamaLeasing.Name = "textBoxNamaLeasing";
-            this.textBoxNamaLeasing.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNamaLeasing.TabIndex = 25;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(409, 49);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "Nama Leasing";
             // 
             // groupBox4
             // 
@@ -529,6 +562,22 @@
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Grup Dana";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(410, 101);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 13);
+            this.label25.TabIndex = 31;
+            this.label25.Text = "Tenor Asuransi";
+            // 
+            // textBoxTenorAsuransi
+            // 
+            this.textBoxTenorAsuransi.Location = new System.Drawing.Point(519, 98);
+            this.textBoxTenorAsuransi.Name = "textBoxTenorAsuransi";
+            this.textBoxTenorAsuransi.Size = new System.Drawing.Size(203, 20);
+            this.textBoxTenorAsuransi.TabIndex = 19;
             // 
             // label22
             // 
@@ -626,54 +675,6 @@
             this.textBoxDanaCair.Size = new System.Drawing.Size(203, 20);
             this.textBoxDanaCair.TabIndex = 13;
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(410, 101);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(78, 13);
-            this.label25.TabIndex = 31;
-            this.label25.Text = "Tenor Asuransi";
-            // 
-            // textBoxTenorAsuransi
-            // 
-            this.textBoxTenorAsuransi.Location = new System.Drawing.Point(519, 98);
-            this.textBoxTenorAsuransi.Name = "textBoxTenorAsuransi";
-            this.textBoxTenorAsuransi.Size = new System.Drawing.Size(203, 20);
-            this.textBoxTenorAsuransi.TabIndex = 19;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(17, 50);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(83, 13);
-            this.label26.TabIndex = 21;
-            this.label26.Text = "No KTP Saksi 1";
-            // 
-            // textBoxNoKTPSaksi1
-            // 
-            this.textBoxNoKTPSaksi1.Location = new System.Drawing.Point(146, 47);
-            this.textBoxNoKTPSaksi1.Name = "textBoxNoKTPSaksi1";
-            this.textBoxNoKTPSaksi1.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNoKTPSaksi1.TabIndex = 21;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(17, 102);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 13);
-            this.label27.TabIndex = 23;
-            this.label27.Text = "No KTP Saksi 2";
-            // 
-            // textBoxNoKTPSaksi2
-            // 
-            this.textBoxNoKTPSaksi2.Location = new System.Drawing.Point(146, 99);
-            this.textBoxNoKTPSaksi2.Name = "textBoxNoKTPSaksi2";
-            this.textBoxNoKTPSaksi2.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNoKTPSaksi2.TabIndex = 23;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.textBoxPersetujuanNoKTP);
@@ -696,6 +697,14 @@
             this.textBoxPersetujuanNoKTP.Size = new System.Drawing.Size(203, 20);
             this.textBoxPersetujuanNoKTP.TabIndex = 11;
             // 
+            // textBoxPersetujuanAlamat
+            // 
+            this.textBoxPersetujuanAlamat.Location = new System.Drawing.Point(116, 43);
+            this.textBoxPersetujuanAlamat.Multiline = true;
+            this.textBoxPersetujuanAlamat.Name = "textBoxPersetujuanAlamat";
+            this.textBoxPersetujuanAlamat.Size = new System.Drawing.Size(203, 56);
+            this.textBoxPersetujuanAlamat.TabIndex = 10;
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -704,6 +713,15 @@
             this.label28.Size = new System.Drawing.Size(45, 13);
             this.label28.TabIndex = 14;
             this.label28.Text = "No KTP";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(7, 46);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(39, 13);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "Alamat";
             // 
             // textBoxPersetujuanNama
             // 
@@ -720,23 +738,6 @@
             this.label29.Size = new System.Drawing.Size(35, 13);
             this.label29.TabIndex = 12;
             this.label29.Text = "Nama";
-            // 
-            // textBoxPersetujuanAlamat
-            // 
-            this.textBoxPersetujuanAlamat.Location = new System.Drawing.Point(116, 43);
-            this.textBoxPersetujuanAlamat.Multiline = true;
-            this.textBoxPersetujuanAlamat.Name = "textBoxPersetujuanAlamat";
-            this.textBoxPersetujuanAlamat.Size = new System.Drawing.Size(203, 56);
-            this.textBoxPersetujuanAlamat.TabIndex = 10;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(7, 46);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(39, 13);
-            this.label30.TabIndex = 13;
-            this.label30.Text = "Alamat";
             // 
             // Form1
             // 

@@ -34,7 +34,6 @@ namespace surat_html
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("id-ID");
             InitializeComponent();
 
-
         }
 
        
@@ -216,7 +215,52 @@ namespace surat_html
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBoxAlamat.Text = terbilang(Int32.Parse(textBoxDanaCair.Text));
+            //webBrowser1.ShowSaveAsDialog();
+           // string path = comboBox1.Text;
+           // File.WriteAllText(@"template\" + path + ".html", webBrowser1.Document.Body.Parent.OuterHtml);
+
+            using (System.IO.StreamWriter sw = new StreamWriter("values.txt"))
+            {
+                foreach (var control in groupBox1.Controls)
+                {
+                    if (control is TextBox)
+                    {
+                        TextBox txt = (TextBox)control;
+                        sw.WriteLine(txt.Name + ":" + txt.Text);
+                    }
+                }
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using (System.IO.StreamReader sr = new StreamReader("values.txt"))
+            {
+                string line = "";
+                string control = "";
+                string val = "";
+                
+                while ((line = sr.ReadLine()) != null)
+                {
+                    //Ugly, but work in every case
+                    if (line.IndexOf(':') >= 0)
+                    {
+                        control = line.Substring(0, line.IndexOf(':'));
+                        val = line.Substring(line.IndexOf(':') + 1);
+                    }
+                    else 
+                    {
+                        val += "\r\n" + line.Substring(line.IndexOf(':') + 1);
+                    }
+                    
+
+                    if (groupBox1.Controls[control] != null)
+                    {
+                        ((TextBox)groupBox1.Controls[control]).Text = val;
+                    }
+                }
+            }
         }
     }
 }
