@@ -233,6 +233,38 @@ namespace surat_html
                             sw.WriteLine(txt.Name + "|" + txt.Text);
                         }
                     }
+                    foreach (var control in groupBox2.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            TextBox txt = (TextBox)control;
+                            sw.WriteLine(txt.Name + "|" + txt.Text);
+                        }
+                    }
+                    foreach (var control in groupBox3.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            TextBox txt = (TextBox)control;
+                            sw.WriteLine(txt.Name + "|" + txt.Text);
+                        }
+                    }
+                    foreach (var control in groupBox4.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            TextBox txt = (TextBox)control;
+                            sw.WriteLine(txt.Name + "|" + txt.Text);
+                        }
+                    }
+                    foreach (var control in groupBox5.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            TextBox txt = (TextBox)control;
+                            sw.WriteLine(txt.Name + "|" + txt.Text);
+                        }
+                    }
                 }
             }
         }
@@ -279,6 +311,22 @@ namespace surat_html
                                     if (groupBox1.Controls[control] != null)
                                     {
                                         ((TextBox)groupBox1.Controls[control]).Text = val;
+                                    }
+                                    if (groupBox2.Controls[control] != null)
+                                    {
+                                        ((TextBox)groupBox2.Controls[control]).Text = val;
+                                    }
+                                    if (groupBox3.Controls[control] != null)
+                                    {
+                                        ((TextBox)groupBox3.Controls[control]).Text = val;
+                                    }
+                                    if (groupBox4.Controls[control] != null)
+                                    {
+                                        ((TextBox)groupBox4.Controls[control]).Text = val;
+                                    }
+                                    if (groupBox5.Controls[control] != null)
+                                    {
+                                        ((TextBox)groupBox5.Controls[control]).Text = val;
                                     }
                                 }
                             }
