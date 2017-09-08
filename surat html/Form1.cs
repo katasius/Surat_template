@@ -218,49 +218,79 @@ namespace surat_html
             //webBrowser1.ShowSaveAsDialog();
            // string path = comboBox1.Text;
            // File.WriteAllText(@"template\" + path + ".html", webBrowser1.Document.Body.Parent.OuterHtml);
+            SaveFileDialog sfd = new SaveFileDialog();
+            
+            if (sfd.ShowDialog() == DialogResult.OK)
 
-            using (System.IO.StreamWriter sw = new StreamWriter("values.txt"))
             {
-                foreach (var control in groupBox1.Controls)
+                using (System.IO.StreamWriter sw = new StreamWriter(sfd.FileName))
                 {
-                    if (control is TextBox)
+                    foreach (var control in groupBox1.Controls)
                     {
-                        TextBox txt = (TextBox)control;
-                        sw.WriteLine(txt.Name + ":" + txt.Text);
+                        if (control is TextBox)
+                        {
+                            TextBox txt = (TextBox)control;
+                            sw.WriteLine(txt.Name + "|" + txt.Text);
+                        }
                     }
                 }
             }
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            using (System.IO.StreamReader sr = new StreamReader("values.txt"))
-            {
-                string line = "";
-                string control = "";
-                string val = "";
-                
-                while ((line = sr.ReadLine()) != null)
-                {
-                    //Ugly, but work in every case
-                    if (line.IndexOf(':') >= 0)
-                    {
-                        control = line.Substring(0, line.IndexOf(':'));
-                        val = line.Substring(line.IndexOf(':') + 1);
-                    }
-                    else 
-                    {
-                        val += "\r\n" + line.Substring(line.IndexOf(':') + 1);
-                    }
-                    
+            Stream myStream = null;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-                    if (groupBox1.Controls[control] != null)
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if ((myStream = openFileDialog1.OpenFile()) != null)
                     {
-                        ((TextBox)groupBox1.Controls[control]).Text = val;
+                        using (myStream)
+                        {
+                            // Insert code to read the stream here.
+                            using (System.IO.StreamReader sr = new StreamReader(myStream))
+                            {
+                                string line = "";
+                                string control = "";
+                                string val = "";
+
+                                while ((line = sr.ReadLine()) != null)
+                                {
+                                    //Ugly, but work in every case
+                                    if (line.IndexOf('|') >= 0)
+                                    {
+                                        control = line.Substring(0, line.IndexOf('|'));
+                                        val = line.Substring(line.IndexOf('|') + 1);
+                                    }
+                                    else
+                                    {
+                                        val += "\r\n" + line.Substring(line.IndexOf('|') + 1);
+                                    }
+
+
+                                    if (groupBox1.Controls[control] != null)
+                                    {
+                                        ((TextBox)groupBox1.Controls[control]).Text = val;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
             }
+            
         }
     }
 }
